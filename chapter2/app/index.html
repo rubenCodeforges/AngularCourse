@@ -5,12 +5,9 @@
     <title>Hello world app</title>
   </head>
   <body>
-      <ul ng-init='messages=[]'>
-        <li ng-repeat='text in messages track by $index'>{{text}}</li>
-      </ul>
-      <input type="text" name="name" ng-model='textMessage' value="">
-      <button ng-click="messages.push(textMessage)">Increment</button>
-
+      <h3>Say Hello:</h3>
+      <input type="text" name="name" value="">
+      <p>Hi, </p>
       <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
   </body>
 </html>

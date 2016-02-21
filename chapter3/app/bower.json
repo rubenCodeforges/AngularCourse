@@ -1,0 +1,9 @@
+{
+  "name": "myApp",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "1.4.*",
+    "bootstrap": "^3.3.6"
+  },
+  "devDependencies": {}
+}

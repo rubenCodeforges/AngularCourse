@@ -32,7 +32,7 @@ Small introduction to `directives` we will use the `ng-repeat` and `ng-click` di
 >  and output in a unordered list the data in the following format:
 >   ```<li> Name: ***** , Age: ******, Gender: ***** </li>```
 
-### 3. Modules , Basic Controllers , Basic $scope
+### [3. Modules , Basic Controllers , Basic $scope](chapter3/README.MD)
 In this chapter you will learn the modular concept and the MVW concept of Angular.
 We will create a controller for the main view and use `$scope`  to bind data to the view and controller.
 

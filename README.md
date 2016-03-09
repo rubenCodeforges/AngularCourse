@@ -37,7 +37,10 @@ In this chapter you will learn the modular concept and the MVW concept of Angula
 We will create a controller for the main view and use `$scope`  to bind data to the view and controller.
 
 > #### Home work:
->  Using the controller and $scope , move from the view the logic in to controller and use `$scope` to work with the data
+> Take the example template from part3 and add the same functionality as in previous homework ( part2 ) but this time move the whole logic in to a controller.
+> add a toaster module and use it to notify the user if he add successfuly data to the table.
+> Make a validation for all fields ( just required or not empty ) in case the form was not valid make a error toaster.
+> You should have a main app.js file for just the init and injection and a separate controller file.
 
 ### 4. $http, short introduction in to promise
 The most important part for a SPA is communication with the server and in this chapter we will learn how to use the core `$http` service.

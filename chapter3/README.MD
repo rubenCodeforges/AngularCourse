@@ -10,6 +10,7 @@ Now a toaster is not a build in module , we have to install it .
 So lets head to [AngularJs-Toaster](https://github.com/jirikavi/AngularJS-Toaster) this is a library writen by jirikavi for angular.
 
 Now as we already know we can install any dependencies with bower
+
 ```bower install --save angularjs-toaster```
 
 And we need to include the proper file in our index file.
@@ -17,11 +18,14 @@ And we need to include the proper file in our index file.
 Lets what the docs of the libs are telling us ?
 
 - Add toaster container directive:
+
 ```<toaster-container></toaster-container>```
 
 lets do it and it somewhere where we want the toaster to pop, ill do it somewhere outside .container
 Now lets try to call the toaster , add a ng-click for our button and put in this
+
 `toaster.pop('success', "title", "text")`
+
 You should get a error in the console .
 
 This is because angular is not aware of that module it is loaded as script but angular has no idea about it.
@@ -29,6 +33,7 @@ To have it work we need to start to put our logic in to controllers.
 This is simply done , create a js file inside app folder and call it app.js. dont forgot to add this file inside index.html after all other imports.
 
 Now add this code :
+
 ```js
 var App = angular.module('myApp',[])
 ```
@@ -43,7 +48,8 @@ Now where does the ngAnimate come from ?
 Thats easy , it is a dependencie ( bower ) for the toaster and when we installed it via bower it automaticaly has installed the ngAnimate.
 Lets create our first controller! create a folder `js/main/controllers`  and inside it create the MainController.js dont forget to include it inside index.html
 And here is what you can paste inside :
-```js
+
+```javascript
 App.controller('MainController',function($scope, toaster) {
   $scope.pop = function(){
       toaster.pop('success', "title", "text");

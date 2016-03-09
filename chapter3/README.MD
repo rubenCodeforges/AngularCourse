@@ -101,7 +101,7 @@ App.controller('MainController',function($scope, toaster) {
 Just few words about `$scope.pop = function(){}` this is similar to `var pop = function(){}`
 with the difference that `$scope` is visible inside html view , so we can access the method `$scope.pop` from html. Lets do it and pop on click.
 ```html
-    <button type="submit" class="btn btn-default" ng-click='pop()'>Push data</button>
+    <button type="button" class="btn btn-default" ng-click='pop()'>Push data</button>
 ```
 Try it out and you should see a text message poping up , you might want to add the styles of the toaster module
 ```html

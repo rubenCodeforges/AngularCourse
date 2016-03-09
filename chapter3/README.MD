@@ -11,7 +11,9 @@ So lets head to [AngularJs-Toaster](https://github.com/jirikavi/AngularJS-Toaste
 
 Now as we already know we can install any dependencies with bower
 
-```bower install --save angularjs-toaster```
+```bash
+bower install --save angularjs-toaster
+```
 
 And we need to include the proper file in our index file.
 
@@ -19,12 +21,16 @@ Lets what the docs of the libs are telling us ?
 
 - Add toaster container directive:
 
-```<toaster-container></toaster-container>```
+```html
+<toaster-container></toaster-container>
+```
 
 lets do it and it somewhere where we want the toaster to pop, ill do it somewhere outside .container
 Now lets try to call the toaster , add a ng-click for our button and put in this
 
-`toaster.pop('success', "title", "text")`
+```javascript
+toaster.pop('success', "title", "text")
+```
 
 You should get a error in the console .
 
@@ -33,10 +39,10 @@ To have it work we need to start to put our logic in to controllers.
 This is simply done , create a js file inside app folder and call it app.js. dont forgot to add this file inside index.html after all other imports.
 
 Now add this code :
-
-```js
+```javascript
 var App = angular.module('myApp',[])
 ```
+
 Here we are creating a object App using angular module method.
 That means that we are creating our own module(app) now the first part of the parameter in module is the string representing the name of the module and the second part is where all dependencies or in other words modules will be injected.
 

@@ -40,6 +40,7 @@ We will create a controller for the main view and use `$scope`  to bind data to 
 > - Take the example template from part3 and add the same functionality as in previous homework ( part2 ) but this time move the whole logic in to a controller.
 > - Add a toaster module and use it to notify the user if he add successfuly data to the table.
 > - Make a validation for all fields ( just required or not empty ) in case the form was not valid make a error toaster.
+> - Create a delete method that will delete a entry on click, use the button from the template i gave `.glyphicon-remove`
 > - You should have a main app.js file for just the init and injection and a separate controller file.
 > 
 > This homework i would like to see in a git repo , but you can send zips , but i like git. dont send fiddls

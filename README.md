@@ -1,5 +1,5 @@
 ![enter image description here](https://angularjs.org/img/AngularJS-large.png)
-# Angular Course for Beginners
+# Angular for Beginners
 This course will be focused on developers with basic knowledge of javascript .
 Also in order to view documentaion for each chapter, just go to the corresponding folder.
 

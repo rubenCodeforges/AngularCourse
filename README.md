@@ -42,18 +42,19 @@ We will create a controller for the main view and use `$scope`  to bind data to 
 > - Make a validation for all fields ( just required or not empty ) in case the form was not valid make a error toaster.
 > - Create a delete method that will delete a entry on click, use the button from the template i gave `.glyphicon-remove`
 > - You should have a main app.js file for just the init and injection and a separate controller file.
-> 
+>
 > This homework i would like to see in a git repo , but you can send zips , but i like git. dont send fiddls
 
-### 4. $http, short introduction in to promise
+### [4. $http, short introduction in to promise](chapter4/)
 The most important part for a SPA is communication with the server and in this chapter we will learn how to use the core `$http` service.
 We will get real data from a server and use it to output it on our view.
 
 > #### Home work:
 > - Modify  previous home work:
-> - On first load retrive data from server using this route `some/route/index` and populate the `people`     data array
-> - On button click, send data to the server , using this route `some/route/new`
-> - on success populate the `peoples` data array with the newly created person
+> - On first load get data from server using this route `http://angular.codeforges.com` and populate the `users` data array
+> - On form submit , send data to the server , using this route `http://angular.codeforges.com`
+> - on success populate the `users` data array with the newly created person
+> You can read the following documentation [angular $http](https://docs.angularjs.org/api/ng/service/$http)
 
 ### 5. Routing ( Ui Routig )
 In this chapter we will learn about routing and how a basic SPA structure should look like.

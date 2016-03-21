@@ -5,6 +5,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 
 $request = Request::createFromGlobals();
+
 if($request->getMethod()=='GET'){
   $data = array();
   for($i=0 ; $i<20; $i++) {
@@ -16,9 +17,10 @@ if($request->getMethod()=='GET'){
   $response->setData($data);
   $response->prepare($request);
   $response->send();
-}else {
-  $response = new JsonResponse(array('error' => 'wrong request' ));
-  $response->headers->set('Access-Control-Allow-Origin', '*');
-  $response->prepare($request);
+} else if $request->getMethod() == 'POST'{
+  var_dump($request->getContent())
+  // $response = new JsonResponse(array('error' => 'wrong request' ));
+  // $response->headers->set('Access-Control-Allow-Origin', '*');
+  // $response->prepare($request);
   $response->send();
 }

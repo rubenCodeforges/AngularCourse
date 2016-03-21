@@ -1,0 +1,10 @@
+{
+  "name": "myApp",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "1.5.*",
+    "bootstrap": "^3.3.6",
+    "AngularJS-Toaster": "angularjs-toaster#^1.2.0"
+  },
+  "devDependencies": {}
+}

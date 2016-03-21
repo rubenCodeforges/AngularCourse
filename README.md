@@ -50,6 +50,7 @@ The most important part for a SPA is communication with the server and in this c
 We will get real data from a server and use it to output it on our view.
 
 > #### Home work:
+> Use template provided in the [chapter4](chapter4/)
 > - Modify  previous home work:
 > - On first load get data from server using this route `http://angular.codeforges.com` and populate the `users` data array
 > - On form submit , send data to the server , using this route `http://angular.codeforges.com`

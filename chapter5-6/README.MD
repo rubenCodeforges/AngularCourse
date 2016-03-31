@@ -106,7 +106,42 @@ This is because we need to tell angular where those template will be "injected",
 
 ```html
 <div ng-view></div>
+<a href='main'>go to main</a>
 ```
 
 Now we are telling angular that inside this container all our routing/template-loading will be.
 Now save and reload the page and se how the template is loaded.
+Looks cool , but what about the hashtag `#` ? It would be much more cooler if its gone !
+For that we need to write just 1 line of code.
+Go back tou app.routing.js and add this :
+```js
+App.config(function($routeProvider, $locationProvider) {
+
+  $locationProvider.html5Mode(true);
+  $routeProvider
+  .when('/main', {
+    templateUrl: 'js/main/partials/main.html',
+    controller: 'MainController'
+  })
+  .otherwise('/');
+
+});
+```
+Note the $locationProvider , this is what makes the magic.
+Now before you can test out , one thing to mention , there are 2 cases which you should know.
+
+1. When your app has a base url like `some.domain.com/notapp/notapp/hereistheindex/index.html` so your base would be `/notapp/notapp/hereistheindex/`.
+then you need to add a base tag in you index.html header
+2. Your app is actually starting from roo folder (base) `my.domain.com/index.html`.
+Then you dont need the base tag , but change the $locationProvider a bit:
+
+```js
+$locationProvider.html5Mode({
+  enabled: true,
+  requireBase : false
+});
+```
+
+Read more about (base)[https://docs.angularjs.org/error/$location/nobase]
+
+Thats all now go and try out !

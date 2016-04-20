@@ -75,11 +75,10 @@ The authentication is a part of many applications , in this chapter we will lear
 We will send login and password to our api and in case of success we will store some data in cookies in order to stay loged in , for that we will use `$cookies`
 
 > #### Home work:
-> - Create a login form , `email` , `password` and send data to api on success store user data in `$cookies`
-> - create a user status bar when logged in , display data  and make a logout button , on click call api if success destroy data in  `$cookies`
+> - Create a login form , `email` , `password` and send data to api on success store user data
+> - create a user status bar when logged in , display data  and make a logout button , on click call api if success destroy data
 
-### 7.Dashboard or secured Area
-`Notes for me: http://solidfoundationwebdev.com/blog/posts/require-authentication-for-certain-routes-with-ui-router-in-angularjs`
+### 7.Dashboard or secured Area ???
 
 In a modern application you will have a dashboard area where you can admin several things such as a Post creation , delete and update.
 This behavior we will also implement in this chapter.

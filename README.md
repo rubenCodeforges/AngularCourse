@@ -57,7 +57,7 @@ We will get real data from a server and use it to output it on our view.
 > - on success populate the `users` data array with the newly created person
 > You can read the following documentation [angular $http](https://docs.angularjs.org/api/ng/service/$http)
 
-### 5. Routing &  Resource Factory
+### [5. Routing &  Resource Factory](chapter5-6/)
 In this chapter we will learn about routing and how a basic SPA structure should look like.
 How to bind a controller and a view to a specific route.
 Understanding what Show, Index , Edit pages are.

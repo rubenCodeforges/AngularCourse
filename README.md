@@ -57,33 +57,28 @@ We will get real data from a server and use it to output it on our view.
 > - on success populate the `users` data array with the newly created person
 > You can read the following documentation [angular $http](https://docs.angularjs.org/api/ng/service/$http)
 
-### 5. Routing ( Ui Routig )
+### [5. Routing &  Resource Factory](chapter5-6/)
 In this chapter we will learn about routing and how a basic SPA structure should look like.
 How to bind a controller and a view to a specific route.
 Understanding what Show, Index , Edit pages are.
 
-> #### Home work:
-> - Create a Post ( Index , Show ) page routes with the corresponding controller and view
-
-
-### 6. Resource Factory a better way to $http
 Here we will talk about resource factory , which is the best way for mapping and controlling data.
 We will build our resource model and bind it to a corresponding api endpoint
 
 > #### Home work:
+> - Create a Post ( Index , Show ) page routes with the corresponding controller and view
 > - Create a resource Post with the endpoint provided
 > - Using the Post resource update the Post Index and Show page , Create a call to the API with the Post resource and populate each page with corresponding data.
 
-### 7. Authentication
+### 6. Authentication
 The authentication is a part of many applications , in this chapter we will learn the basics of that process.
 We will send login and password to our api and in case of success we will store some data in cookies in order to stay loged in , for that we will use `$cookies`
 
 > #### Home work:
-> - Create a login form , `email` , `password` and send data to api on success store user data in `$cookies`
-> - create a user status bar when logged in , display data  and make a logout button , on click call api if success destroy data in  `$cookies`
+> - Create a login form , `email` , `password` and send data to api on success store user data
+> - create a user status bar when logged in , display data  and make a logout button , on click call api if success destroy data
 
-### 8.Dashboard or secured Area
-`Notes for me: http://solidfoundationwebdev.com/blog/posts/require-authentication-for-certain-routes-with-ui-router-in-angularjs`
+### 7.Dashboard or secured Area ???
 
 In a modern application you will have a dashboard area where you can admin several things such as a Post creation , delete and update.
 This behavior we will also implement in this chapter.
@@ -101,7 +96,7 @@ We will create 2 routes for both `new` and `delete`
 > - add a post listing ( index ) on the dashboard page
 > - add handlers for `create`, `edit` and `delete` buttons ( use ui route )
 
-### 9. Post Create and Edit
+### 8. Post Create and Edit
 The title of the chapter i pretty obvious .
 So mostly at the time the create and edit pages ( views ) are almost the same .
 That why we will use same html for both pages.
@@ -114,14 +109,14 @@ the create Page is simple a form witch on submit will send data to api , here bu
 > #### Home work
 > - Update App , add Create and Edit Pages the forms should have validation on fields on sbumit send data to api
 
-### 10. Cleaning up the application
+### 9. Cleaning up the application
 This chapter is a conclusion of our little course , based on you work we will discuss some best practices in terms of structure and
 I will introduce some useful tools , like yeoman and will give a interesting home work.
 
 > #### Home work
 > - hidden
 
-### 11. Directives
+### 10. Directives
 I know it should be at top , but from my experience i see that directives are hard to understand for most developers that why it comes as a last chapter.
 So far we have a fully functional application , now we will polish it with directive abstracting , decoupling and making the app modular.
 This chapter will take double the time as previous chapters so be prepared :)

@@ -93,7 +93,7 @@ app.factory( 'AuthService', function() {
 });
 ```
 > - So whenever we try to enter the home page `/` we have to check if the user is logged in if not redirect to login `/login`
-> - On login page create a login form , `email` , `password`.
+> - On login page create a login form , `login`(on endpoint its name) , `password`.
 > - While entering the login page , we also can fetch all users ( this is required to find the id of our user that will be logged in ) so the endpoint for getting users list is `/wp/v2/users`  and full url would be `angular.codeforges.com/api/wp-json/wp/v2/users`
 > - On loginForm submit , first you need to find the id of the users , use the array of users you retrived earlier and find the required user by email and get the id.
 > - Next you have to recive this user using this endpoint `/wp/v2/users/<id>`

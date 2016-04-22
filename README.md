@@ -75,8 +75,33 @@ The authentication is a part of many applications , in this chapter we will lear
 We will send login and password to our api and in case of success we will store some data in cookies in order to stay loged in , for that we will use `$cookies`
 
 > #### Home work:
-> - Create a login form , `email` , `password` and send data to api on success store user data
-> - create a user status bar when logged in , display data  and make a logout button , on click call api if success destroy data
+> Some explanation: Due to the fact that the outofthebox wp-rest-api lacks on some login ednpoints , we will have to do a call to list users find the required get its id and make a request to retrive that user. So here is the homework:
+> - We will have 2 pages , home with route `/` this will be the default one, then login with route `/login`
+> - You need to store a current user context , the best way for that is to use a service. While we didnt covered them i give you an example:
+
+```javaScript
+app.factory( 'AuthService', function() {
+  var currentUser;
+
+  return {
+    login: function() { ... },
+    logout: function() { ... },
+    isLoggedIn: function() { ... },
+    currentUser: function() { return currentUser; }
+    ...
+  };
+});
+```
+> - So whenever we try to enter the home page `/` we have to check if the user is logged in if not redirect to login `/login`
+> - On login page create a login form , `email` , `password`.
+> - While entering the login page , we also can fetch all users ( this is required to find the id of our user that will be logged in ) so the endpoint for getting users list is `/wp/v2/users`  and full url would be `angular.codeforges.com/api/wp-json/wp/v2/users`
+> - On loginForm submit , first you need to find the id of the users , use the array of users you retrived earlier and find the required user by email and get the id.
+> - Next you have to recive this user using this endpoint `/wp/v2/users/<id>`
+> - On success , store the userData in the service you created earlier. And redirect on home page
+> - On home page create a user status bar when logged in , display data  and make a logout button , the logout should destroy the user in service and you should be redirected from home to login
+
+> !!! The Best solution will be used as boilerplate for futher chapters.!!!
+
 
 ### 7.Dashboard or secured Area ???
 

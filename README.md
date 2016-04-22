@@ -70,9 +70,9 @@ We will build our resource model and bind it to a corresponding api endpoint
 > - Create a resource Post with the endpoint provided
 > - Using the Post resource update the Post Index and Show page , Create a call to the API with the Post resource and populate each page with corresponding data.
 
-### 6. Authentication
+### [6. Authentication | Basic Auth](chapter6/)
 The authentication is a part of many applications , in this chapter we will learn the basics of that process.
-We will send login and password to our api and in case of success we will store some data in cookies in order to stay loged in , for that we will use `$cookies`
+We will send login and password to our api and in case of success we will store some data in Service in order to stay loged in
 
 > #### Home work:
 > Some explanation: Due to the fact that the outofthebox wp-rest-api lacks on some login ednpoints , we will have to do a call to list users find the required get its id and make a request to retrive that user. So here is the homework:

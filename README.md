@@ -109,39 +109,35 @@ In a modern application you will have a dashboard area where you can admin sever
 This behavior we will also implement in this chapter.
 First we will create secure routes which requires the user to be authenticated , otherwise the router will send the user to a login form.
 If authentication is successful the user is send to a dashboard.
-You can use for authentication a [example](https://github.com/migalenkom/angular_app/tree/master/Hometask%235) made by one member from our course 
-For the dashboard we will use a bootstrap [template] (http://blackrockdigital.github.io/startbootstrap-sb-admin/index.html)
-You dont need to have all the peaces , in fact we need just one side menu item ( Pages ) with following sub items New Page , Page list.
-So the menu structure: 
+
+>#### Home work
+>You can use for authentication a [example](https://github.com/migalenkom/angular_app/tree/master/Hometask%235) made by one >member from our course 
+>For the dashboard we will use a bootstrap [template] (http://blackrockdigital.github.io/startbootstrap-sb-admin/index.html)
+>You dont need to have all the peaces , in fact we need just one side menu item ( Pages ) with following sub items New Page , Page list.
+>So the menu structure: 
 
 ```
 Pages-
   New post
   All posts
 ```
-For post listing you can use bootstrap tables.
-For new post following fields are required:
+>For post listing you can use bootstrap tables.
+>For new post following fields are required:
 ```
 Title( api key : title )
 Content( api key : content)
 post status ( dropdown , api key: status , should be default to 'publish')
 ```
-For more description of api fields refer to the [api doc](http://v2.wp-api.org/reference/posts/)
-please read through the doc to find the required endpoints.
-We need to create a post , to update(edit) a post and fetch a post list.
-
-The post edit form is same as form for create but is field with data on load, the data is fetched from api.
-In order to enter a post edit screen we need to have a button on post listing for each post.
-
-##### !Security!
-Please take in to account that for create , update you need to check for credentials ( Basic Auth ).
-Also while you using a example for the authentication , you should extend it a bit and check if the user is authorized to enter a dashboar page ( is loged in )
-
->#### Home work
-> - Update app , add a dashboard view
-> - add a security check for is the user authenticated or not if he hits on a secure route
-> - add a post listing ( index ) on the dashboard page
-> - add handlers for `create`, `edit` and `delete` buttons ( use ui route )
+>For more description of api fields refer to the [api doc](http://v2.wp-api.org/reference/posts/)
+>please read through the doc to find the required endpoints.
+>We need to create a post , to update(edit) a post and fetch a post list.
+>
+>The post edit form is same as form for create but is field with data on load, the data is fetched from api.
+>In order to enter a post edit screen we need to have a button on post listing for each post.
+>
+>##### !Security!
+>Please take in to account that for create , update you need to check for credentials ( Basic Auth ).
+>Also while you using a example for the authentication , you should extend it a bit and check if the user is authorized to >enter a dashboar page ( is loged in )
 
 ### 8. Post Create and Edit
 The title of the chapter i pretty obvious .

@@ -139,27 +139,14 @@ post status ( dropdown , api key: status , should be default to 'publish')
 >Please take in to account that for create , update you need to check for credentials ( Basic Auth ).
 >Also while you using a example for the authentication , you should extend it a bit and check if the user is authorized to >enter a dashboar page ( is loged in )
 
-### 8. Post Create and Edit
-The title of the chapter i pretty obvious .
-So mostly at the time the create and edit pages ( views ) are almost the same .
-That why we will use same html for both pages.
-the create Page is simple a form witch on submit will send data to api , here but we will implement a simple validation for :
- > `Title` - cant be blank and cant be longer then 150 chars
- > `Description` not longer then 1000
-
- For edit page we will first fetch data for the corresponding post and update with that data the form , then on form submit we will send the new data. validation same here.
-
-> #### Home work
-> - Update App , add Create and Edit Pages the forms should have validation on fields on sbumit send data to api
-
-### 9. Cleaning up the application
+### 8. Cleaning up the application
 This chapter is a conclusion of our little course , based on you work we will discuss some best practices in terms of structure and
 I will introduce some useful tools , like yeoman and will give a interesting home work.
 
 > #### Home work
 > - hidden
 
-### 10. Directives
+### 11. Directives
 I know it should be at top , but from my experience i see that directives are hard to understand for most developers that why it comes as a last chapter.
 So far we have a fully functional application , now we will polish it with directive abstracting , decoupling and making the app modular.
 This chapter will take double the time as previous chapters so be prepared :)

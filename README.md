@@ -146,7 +146,7 @@ I will introduce some useful tools , like yeoman and will give a interesting hom
 > #### Home work
 > - hidden
 
-### 11. Directives
+### 9. Directives
 I know it should be at top , but from my experience i see that directives are hard to understand for most developers that why it comes as a last chapter.
 So far we have a fully functional application , now we will polish it with directive abstracting , decoupling and making the app modular.
 This chapter will take double the time as previous chapters so be prepared :)
